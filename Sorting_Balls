@@ -1,2 +1,16 @@
 def sorting_ball(num):
-     
+     list=[]
+     list.append(num)   # num will be added in list
+     res= sort(list)   # list will be sorted
+     return res
+
+import code_wars as test
+from solution import sorting_ball
+@test.describe("Fixed Tests")
+def fixed_tests():
+     @test.it('Basic test cases')
+     def basic_test_cases()
+         test.assert_equals (sorting_ball(30),([30]))
+         test.assert_equals (sorting_ball(20),([20,30]))
+         test.assert_equals (sorting_ball(10),([10,20,30]))
+         test.assert_equals (sorting_ball(5),([5,10,20,30]))
