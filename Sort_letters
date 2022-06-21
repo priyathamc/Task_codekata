@@ -1,0 +1,14 @@
+def sort_letters(str):
+    return "".join(filter(lambda i:i.isalpha(),sorted(str,key=lambda i:i.lower())))
+# given string will be sorted in ascending order.
+import code_wars as test
+from solution import sort_letters
+@test.describe("Fixed Tests")
+def fixed_tests():
+     @test.it('Basic test cases')
+     def basic_test_cases()
+         test.assert_equals (sort_letters("five star"),('aefirstv'))
+         test.assert_equals (sort_letters("vehicle wheel"),('ceeeehhillv))
+         test.assert_equals (sort_letters("Grade A"),('aadegr'))
+         test.assert_equals (sort_letters("github com"),(bcghimot))
+        
